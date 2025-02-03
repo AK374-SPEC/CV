@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Jane Doe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .cv-container {
+            width: 1160px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            /* padding: 20px; */
+        }
+        
+        header {
+            background-color: #782221;
+            color: white;
+            padding-top: 20px;
+            text-align: center; 
+        }
+        
+        .profile-pic img {
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            width: 150px;
+            height: 150px;
+        }
+        
+        ul.contact-info { 
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+            display: flex;
+            width: 100%;
+            height: 50px;
+            background-color: #2c1d27;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        ul.contact-info li {
+            padding: 0 20px;
+        }
+    
+        .contact-info a {
+            color: white;
+            background-color: #2c1d27;
+            display: block; 
+            
+        }
+        
+        main {
+            display: flex;
+            justify-content: center; 
+        }
+        
+        .about, .languages, .interests, {
+            flex: 1;
+            padding:40px;
+            margin-right: 20px;
+            flex-direction: column;
+            justify-content: right;
+            margin-bottom:20px;
+            margin-right:-20px;
+        
+        }
+        
+        .experiences, .education, .skills {
+            background-color:white ;
+            padding: 40px;
+            display :flex ;
+            flex-direction: column;
+            justify-content: left;
+    
+            
+        
+           }
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        footer a {
+            color: white;
+            
+        }
+        </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <div class="profile-pic">
+                <img src="photo.jpg" alt="Jane Doe">
+            </div>
+            <div>
+            <h1>Jane Doe</h1>
+            <h2>Développeuse web junior</h2>
+            <div>
+            <p class="contact-info">
+                <a href="https://www.google.com/maps?q=12+Rue+des+Oliviers,+12345+La+Belle+Nouvelle" target="_blank">12 Rue des Oliviers, 12345 La Belle Nouvelle</a>
+                <a href="mailto:jane.doe@gmail.com">jane.doe@gmail.com</a>
+                <a href="tel:0606060606">0606060606</a>
+            </p>
+        </div>
+           </div>
+        </header>
+        
+        <main>
+            <div style="display:flex;">       
+            <div style="width:20%; background:#782221; padding:24px; color: #f4f4f4;">
+            <section class="about">
+                <div>
+                <div class="text-encadre">    
+                <h3>À propos</h3>
+               </div> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum a ligula  in pharetra.
+                    Pellentesque viverra semper nihb ut eleifend. in id est magna. Nunc ultrices nisi id sem mollis, sed sagittis lorem pellentesque. Fusce vitae malesuada
+                    ex. Quisque scelerisque risus turpis, vitae vulputate sapien aliquet quis.
+                </p>
+               </section>
+               <section class="languages">
+                <h3>Langues parlées</h3>
+                <ul>
+                    <li>Français - Langue maternelle</li>
+                    <li>Anglais - intermédiaire</li>
+                    <li>Espagnol - Debutant</li>
+                </ul>
+           </section>
+            
+            <section class="interests">
+                <h3>Centres d'intérêt</h3>
+                <ul>
+                    <li>Chant</li>
+                    <li>Randonnée</li>
+                </ul>
+           </section>
+        </div>
+            
+            <div style="flex-grow:1; background:white; padding:24px">
+            <section class="experiences">
+                <h3>Expériences professionnelles</h3>
+                <div class="experience-item">
+                    <h4>Intitulé du poste chez Nom de l'entreprise</h4>
+                    <span>Du XX/XX/XXXX au XX/XX/XXXX</span>
+                    <ul>
+                        <li>Mission 1</li>
+                        <li>Mission 2</li>
+                    </ul>
+                </div>
+            </section>
+            <div style="flex-grow:1; background:white; padding:24px"></div>
+            <section class="education">
+                <h3>Diplômes/Formations</h3>
+                <div class="education-item">
+                    <h4>Diplôme/Formation n°1</h4>
+                    <span>Nom de l'école - XX/XX/XXXX</span>
+             </div>
+             </section>
+             <div style="flex-grow:1; background:white; padding:24px">
+            <section class="skills">
+                <h3>Compétences</h3>
+                <ul>
+                    <li>HTML - Expert</li>
+                    <li>CSS - Avancé</li>
+                    <li>JavaScript - Débutant</li>
+                </ul>
+            </div>
+            </section>
+        </main>
+        
+        <footer>
+            <img src="linkedin (2).png" alt="linkedin">
+            <img src="twitter (1).png" alt="twitter">
+            <img src="github (1).png" alt="github">
+            <p>Dernière mise à jour : <time datetime="2024-08-28">28 août 2024</time></p>
+        </footer>
+    </div>
+
+</body>
+</html>
